@@ -19,4 +19,19 @@ public class Encrypt {
     public void setKey(int Key) {
         this.Key = Key;
     }
+
+    public String Encrypt(int Key, String Text){
+        this.Key=Key;
+        this.Text = Text;
+
+        String textEncrypted="";
+
+        if(Key==0 && !Text.isEmpty()){
+
+            textEncrypted =Text;
+        }
+        else if (Text.isEmpty() && Key>= 0 && Key <= 25) {
+            textEncrypted= "Please enter the text to be encrypted";
+        }
+    };
 }
