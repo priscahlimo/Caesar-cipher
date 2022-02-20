@@ -17,17 +17,18 @@ public class App {
         System.out.println("Choose the method you want to apply:");
         Key = input.nextInt();
 
-//        if (choice == 1) {
-//            System.out.println("Encryption");
-//            input.nextLine();
-//            System.out.println("Text can be lower or uppercase alphabet");
-//            System.out.println("Enter text to encrypt: ");
-//            Text = input.nextLine();
-//
-//            String encrypted = encrypt.Encrypt(Key, Text);
-//            System.out.println("Encrypted text is: ");
-//            System.out.println(encrypted);
-//        } else {
+        if (choice == 1) {
+            System.out.println("Encryption");
+            input.nextLine();
+            System.out.println("Text can be lower or uppercase alphabet");
+            System.out.println("Enter text to encrypt: ");
+            Text = input.nextLine();
+
+            String encrypted = encrypt.Encrypt(Key, Text);
+            System.out.println("Encrypted text is: ");
+            System.out.println(encrypted);
+       }
+        //else {
 //            if (choice == 2) {
 //                System.out.println("Decryption");
 //                input.nextLine();
@@ -40,8 +41,8 @@ public class App {
 //                System.out.println(decrypted);
             }
 
-        }
+      //  }
 
 
-    }
+    //}
 }
