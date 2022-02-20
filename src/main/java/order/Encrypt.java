@@ -1,11 +1,12 @@
 package order;
 
 public class Encrypt {
-    private int mKey;
-    private String mText;
+    private int Key;
+    private String Text;
 
-    Encrypt(String text, int key) {
-        this.mText = text;
-        this.mKey = key;
+    public String getText() {
+        return Text;
     }
+
+
 }
