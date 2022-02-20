@@ -8,5 +8,15 @@ public class Encrypt {
         return Text;
     }
 
+    public  void setText( String Text){
+        this.Text=  Text;
+    }
 
+    public int getKey(){
+        return Key;
+    }
+
+    public void setKey(int Key) {
+        this.Key = Key;
+    }
 }
