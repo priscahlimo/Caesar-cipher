@@ -17,7 +17,7 @@ public class EncryptTest {
     @Test
     public void encryptsCharacter(){
         Encrypt encryptDecrypt = new Encrypt();
-        assertEquals("b",encryptDecrypt.Encrypt(2,"d"));
+        assertEquals("c",encryptDecrypt.Encrypt(2,"d"));
     }
 
 //    sentence encryption test
