@@ -34,5 +34,16 @@ public class Decrypt {
         } else if ((Text.isEmpty() || !Text.isEmpty()) && (key < 0 || key > 25)) {
           textDecrypted = "Key must be a number between 0 and 25";
         }
+
+        char[] aCharacters = this.reversed.toCharArray();
+        for (char character : aCharacters) {
+            if (!Text.isEmpty() && key >= 1 && key <= 25) {
+                int valueOfChar = Character.valueOf(character) - key;
+                char shifted = (char) valueOfChar;
+
+                textDecrypted = Character.toString(shifted);
+            }
+        }
+        return textDecrypted;
     };
 }
