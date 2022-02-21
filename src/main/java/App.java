@@ -6,7 +6,7 @@ public class App {
 
         Scanner input = new Scanner(System.in );
         Encrypt encrypt = new Encrypt();
-//        Decrypt decrypt = new Decrypt();
+        Decrypt decrypt = new Decrypt();
 
         String Text;
         int Key;
