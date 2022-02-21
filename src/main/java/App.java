@@ -28,21 +28,26 @@ public class App {
             System.out.println("Encrypted text is: ");
             System.out.println(encrypted);
        }
-        //else {
-//            if (choice == 2) {
-//                System.out.println("Decryption");
-//                input.nextLine();
-//                System.out.println("Text can be lower or uppercase alphabet");
-//                System.out.println("Enter cipher to decrypt: ");
-//                Text = input.nextLine();
 
-//                String decrypted = decrypt.Decrypt(Key, Text);
-//                System.out.println("Decrypted cipher is: ");
-//                System.out.println(decrypted);
+        if (choice == 2) {
+               System.out.println("Decryption");
+               input.nextLine();
+               System.out.println("Input either lowercase or uppercase alphabets");
+                System.out.println("Enter cipher to decrypt: ");
+               Text = input.nextLine();
+
+              String decrypted = decrypt.Decrypt(Key, Text);
+               System.out.println("Decrypted cipher is: ");
+               System.out.println(decrypted);
+        }
+        else{
+            if(choice==3){
+                System.out.println("Exit");
             }
+        }
 
-      //  }
 
 
-    //}
+
+   }
 }
