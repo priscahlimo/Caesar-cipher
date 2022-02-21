@@ -14,14 +14,14 @@ public class App {
         System.out.println("Hello! Choose 1. Encryption\n2. Decrypt\nChoose(1,2 or 3 to exit): ");
         int choice = input.nextInt();
         Text = input.nextLine();
-        System.out.println("Choose the method you want to apply:");
+        System.out.println("Choose the key you want to apply:");
         Key = input.nextInt();
 
         if (choice == 1) {
             System.out.println("Encryption");
             input.nextLine();
-            System.out.println("Text can be lower or uppercase alphabet");
-            System.out.println("Enter text to encrypt: ");
+
+            System.out.println("Enter text to encrypt: Enter either lower or uppercase alphabet");
             Text = input.nextLine();
 
             String encrypted = encrypt.Encrypt(Key, Text);
